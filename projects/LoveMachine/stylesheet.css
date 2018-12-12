@@ -59,6 +59,14 @@ body {
     float: right;
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 /* ---------------------- */
 
 /* Container for user cards */
@@ -173,12 +181,12 @@ h3 {
 
 #label-pass {
     color: #d37676;
-    left: 96px;
+    left: 99px;
 }
 
 #label-like {
     color: #57b55f;
-    right: 100px;
+    right: 104px;
 }
 
 /* Fading animation */
