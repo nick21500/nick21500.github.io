@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Love Machine : Search</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="icon" href="resources/img/favicon.ico">
+</head>
+
+<body>
+    <!-- Top navigation -->
+    <div class="topnav">
+        <a href="index.html" class="plain">LoveMachine</a>
+        <a href="index.html" class="">Browse</a>
+        <a href="search.html" class="active">Search</a>
+        <a href="profile.html" class="right">Profile</a>
+        <a href="profile.html" class="plain right" id="profile">
+            <img id="avatar" src="resources/img/avatar.png">
+        </a>
+    </div>
+
+    <div id="wrapper">
+        <!-- Sidebar: Holds search filters -->
+        <div id="sidebar">
+            <form id="search-filter">
+                <fieldset>
+                    <legend>Filters</legend>
+                    <!-- Only show real robots -->
+                    <input type="checkbox" name="real" id="real">
+                    <label for="real">Real</label>
+                    <br>
+                    <!-- Only show humanoid robots -->
+                    <input type="checkbox" name="humanoid" id="humanoid">
+                    <label for="humanoid">Humanoid</label>
+                    <br>
+                    <!-- Only show cleaning robots -->
+                    <input type="checkbox" name="cleans" id="cleans">
+                    <label for="cleans">Cleans your home</label>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Minimum Height</legend>
+                    <!-- Only show users >= selected height -->
+                    <div id="height-slider">
+                        <label id="height-selected">0</label>'
+                        <!-- Why did this god damn range take me longer than most elements of the site? -->
+                        <input type="range" min="0" max="10" step="1" value="0" id="height">
+                        <label id="height-max">10'+</label>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+        <!-- List: Holds the results filtered by the sidebar -->
+        <div id="list">
+            <!-- Each .list-item holds a picture of the user, their info, and a <hr>. Completely modular. -->
+            <div class="list-item" id="list-user1">
+                <img src="resources/img/users/atlas.jpg">
+                <div class="list-text">
+                    <strong>Atlas</strong>, Boston Dynamics
+                    <br>
+                    <strong>5'11"</strong>, mfd. 2013
+                </div>
+                <hr>
+            </div>
+            <div class="list-item" id="list-user2">
+                <img src="resources/img/users/asimo.jpg">
+                <div class="list-text">
+                    <strong>Asimo</strong>, Honda
+                    <br>
+                    <strong>4'3"</strong>, mfd. 2000
+                </div>
+                <hr>
+            </div>
+            <div class="list-item" id="list-user3">
+                <img src="resources/img/users/sonny.jpg">
+                <div class="list-text">
+                    <strong>Sonny</strong>, U.S. Robotics
+                    <br>
+                    <strong>6'0"</strong>, mfd. 2035
+                </div>
+                <hr>
+            </div>
+            <div class="list-item" id="list-user4">
+                <img src="resources/img/users/r2d2.jpg">
+                <div class="list-text">
+                    <strong>R2-D2</strong>, Industrial Automaton
+                    <br>
+                    <strong>3'7"</strong>, mfd. &lt; 32 BBY
+                </div>
+                <hr>
+            </div>
+            <div class="list-item" id="list-user5">
+                <img src="resources/img/users/pepper.jpg">
+                <div class="list-text">
+                    <strong>Pepper</strong>, Softbank
+                    <br>
+                    <strong>3'11"</strong>, mfd. 2014
+                </div>
+                <hr>
+            </div>
+            <div class="list-item" id="list-user6">
+                <img src="resources/img/users/iron.jpg">
+                <div class="list-text">
+                    <strong>The Iron Giant</strong>, Unknown
+                    <br>
+                    <strong>50'0"</strong>, disc. 1957
+                </div>
+                <hr>
+            </div>
+            <div class="list-item" id="list-user7">
+                <img src="resources/img/users/roomba.jpg">
+                <div class="list-text">
+                    <strong>Roomba</strong>, iRobot
+                    <br>
+                    <strong>0'4"</strong>, mfd. 2002
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <!-- Blank div to extend the page just a bit for aesthetics -->
+    <div id="blank"></div>
+
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="search.js"></script>
+</body>
+
+</html>
+
+<!--
+    LoveMachine
+    By Nicolas Orlandini
+-->

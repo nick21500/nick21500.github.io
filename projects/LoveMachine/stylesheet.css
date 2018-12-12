@@ -1,0 +1,312 @@
+/* Import a custom font because fuck defaults in general */
+@font-face {
+    font-family: "Ikaros";
+    src: url(resources/font/IkarosRegular.otf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e9e9e9;
+    margin: 0;
+    font-family: "Ikaros", "Helvetica", sans-serif;
+}
+
+/* Top navigation */
+.topnav {
+    overflow: hidden;
+    background-color: #212121;
+    height: 58px;
+}
+
+.topnav a {
+    float: left;
+    color: #e9e9e9;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 21px;
+    line-height: 30px;
+}
+
+.topnav a:hover {
+    background-color: #424f84;
+    color: white;
+}
+
+.topnav a.active {
+    background-color: #4c6eaf;
+    color: white;
+}
+
+.topnav a.plain {
+    background-color: #212121;
+    color: #e9e9e9;
+}
+
+.topnav #profile {
+    float: right;
+    padding: 9px;
+}
+
+.topnav #avatar {
+    height: 40px;
+}
+
+.topnav .right {
+    float: right;
+}
+
+/* ---------------------- */
+
+/* Container for user cards */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    top: 20px;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.slide {
+    display: none;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+/* Cards */
+.card {
+    background-color: #dbdbdb;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    height: 600px;
+    border-radius: 2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card .avatar {
+    width: 350px;
+    height: 350px;
+    margin: 25px;
+    padding-top: 25px;
+}
+
+.card .avatar img {
+    border-radius: 2%;
+}
+
+.card .info {
+    margin: 25px;
+    margin-top: 60px;
+}
+
+.card .info h1,
+h3 {
+    line-height: 50%;
+}
+
+.card .info h1 {
+    font-size: 40px;
+}
+
+.card .info h3 {
+    font-size: 22px;
+}
+
+.card .info p {
+    line-height: 150%;
+    margin-top: 40px;
+    font-size: 19px;
+}
+
+/* Like & pass buttons */
+.pass,
+.like {
+    cursor: pointer;
+    position: absolute;
+    top: 260px;
+    height: 64px;
+    width: 64px;
+    padding: 14px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    transition: 0.6s ease;
+    border-radius: 50%;
+    user-select: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.pass {
+    background-color: #dd7979;
+    left: 100px;
+}
+
+.like {
+    background-color: #79dd81;
+    right: 100px;
+    padding: 16px;
+}
+
+.pass:hover {
+    background-color: #882e2e;
+}
+
+.like:hover {
+    background-color: #336c38;
+}
+
+#label-pass,
+#label-like {
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    top: 320px;
+}
+
+#label-pass {
+    color: #d37676;
+    left: 96px;
+}
+
+#label-like {
+    color: #57b55f;
+    right: 100px;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 0.3s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* ---------------------- */
+
+#wrapper {
+    width: 94vw;
+    height: 88vh;
+    margin: auto;
+    margin-top: 3vh;
+    max-width: 1060px;
+}
+
+/* Sidebar: Holds search filters */
+#sidebar {
+    float: left;
+    width: 33%;
+    height: auto;
+    background-color: #dbdbdb;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    font-size: 18px
+}
+
+#search-filter {
+    margin: 15px;
+}
+
+/* Styling the range input is a PITA */
+input[type=range] {
+    background-color: rgba(0, 0, 0, 0);
+    height: 21px;
+    -webkit-appearance: none;
+    width: 70%;
+    padding-top: 10px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    background: #334D5C;
+    border-radius: 50;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 5px #000000;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #FFFFFFFF;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -5px;
+}
+
+/* List: Holds search results */
+#list {
+    float: left;
+    height: auto;
+    width: 65%;
+    margin-left: 2%;
+    background-color: #dbdbdb;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    padding-bottom: 0px;
+}
+
+/* Each individual list item block */
+.list-item {
+    font-size: 24px;
+    overflow: auto;
+}
+
+.list-item img {
+    height: 150px;
+    float: left;
+    margin-right: 20px;
+    border: 5px ridge #23292e;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.list-text {
+    margin-top: 40px;
+}
+
+.list-item hr {
+    clear: both;
+}
+
+/* There's our friend the blank div */
+#blank {
+    height: 25px;
+    width: 25px;
+    clear: both;
+}
+
+/* ---------------------- */
+
+/* I just included this so profile wasn't totally blank. It's a useless page though */
+#profile-page {
+    padding: 20px;
+    text-align: center;
+}
+
+#avatar-main {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: 512px;
+}
