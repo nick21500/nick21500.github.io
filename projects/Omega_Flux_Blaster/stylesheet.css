@@ -1,0 +1,273 @@
+/* HTML5 support for older browsers */
+header,
+main,
+footer,
+figure,
+figcaption,
+aside,
+section,
+article {
+    display: block;
+}
+
+@font-face {
+    font-family: "Airstream";
+    src: url(resources/fonts/Airstream.otf);
+}
+
+@font-face {
+    font-family: "Space Patrol";
+    src: url(resources/fonts/Space.otf);
+}
+
+@font-face {
+    font-family: "Retrocycles";
+    src: url(resources/fonts/Retrocycles.otf);
+}
+
+#wrapper {
+    width: 80%;
+    min-width: 715px;
+    max-width: 1048px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("resources/images/bg/grunge-texture-3.jpg");
+    background-repeat: repeat;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.78);
+    padding: 30px;
+    overflow: auto;
+}
+
+body {
+    background-image: url("resources/images/bg/grunge-texture-4.jpg");
+    background-repeat: repeat;
+    text-align: center;
+    font-family: "Retrocycles", serif;
+    padding: 30px;
+}
+
+p {
+    font-size: 26px;
+}
+
+.imgLogo {
+    display: block;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.topnav {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    font-family: "Airstream", serif;
+    font-size: 48px;
+    padding-bottom: 30px;
+}
+
+.topnav ul {
+    list-style: none;
+    margin: 0 2px;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.topnav li {
+    margin: 0px;
+    display: inline;
+}
+
+.topnav li a {
+    text-decoration: none;
+    color: #5d3200;
+}
+
+.topnav li a:hover {
+    color: #2e1900;
+    text-decoration: underline;
+}
+
+.topnav li a.active {
+    color: #2e1900;
+    text-decoration: underline;
+}
+
+/* ------------------------------ */
+
+.content {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.imgMain {
+    height: 300px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(resources/images/raygun.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-bottom: 10px;
+}
+
+/* ------------------------------ */
+
+#testimonials td {
+    width: 50%;
+    padding: 10px;
+    font-size: 32px;
+}
+
+#testimonials td img {
+    width: 100%;
+    border: 2px solid black;
+}
+
+/* ------------------------------ */
+
+#orderImg {
+    display: none;
+}
+
+#order td {
+    height: 420px;
+    padding: 10px;
+    font-size: 32px;
+}
+
+#order td:first-child {
+    width: 60%;
+}
+
+#order td:last-child {
+    width: auto;
+}
+
+#order td img {
+    width: 420px;
+    min-width: 420px;
+    height: 100%;
+}
+
+.showForm {
+    font-family: "Airstream";
+    font-size: 60px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 3px solid #6f1a00;
+    color: #6f1a00;
+    width: 90%;
+    outline: none;
+}
+
+.showForm:hover {
+    background-color: #6f1a00;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.atomic {
+    font-family: "Space Patrol";
+}
+
+#orderForm {
+    display: none;
+    line-height: 200%;
+    font-size: 22px;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 15px;
+}
+
+#orderForm table {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#orderForm input,
+#orderForm select {
+    width: 70%;
+}
+
+#orderForm #placeOrder {
+    font-family: "Retrocycles";
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 3px solid #6f1a00;
+    color: #6f1a00;
+    width: 50%;
+    outline: none;
+    margin-top: 20px;
+}
+
+#orderForm #placeOrder:hover {
+    background-color: #6f1a00;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* ------------------------------ */
+
+@media only screen and (max-width: 37.5em) {
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #wrapper {
+        height: 100%;
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .topnav {
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        font-family: "Airstream", serif;
+        font-size: 48px;
+        padding-bottom: 30px;
+    }
+
+    .topnav ul {
+        list-style: none;
+        margin: 0 2px;
+        padding: 0px;
+        width: 100%;
+        display: block;
+    }
+
+    .topnav li {
+        display: block;
+    }
+
+    #orderImg {
+        display: block;
+        height: 300px;
+    }
+
+    #order td {
+        height: 300px;
+        font-size: 32px;
+    }
+
+    #order td:first-child {
+        width: 0%;
+    }
+
+    #order td:last-child {
+        width: auto;
+    }
+
+    #order td img {
+        display: none;
+    }
+
+    #orderForm #placeOrder {
+        font-size: 20px;
+    }
+
+}

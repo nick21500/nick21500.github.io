@@ -136,6 +136,11 @@ svg {
     margin-top: -30px;
 }
 
+#section-1 a {
+    color: #ffffff;
+    line-height: 1.5;
+}
+
 #section-2 {
     background-color: #334c5c;
 }
