@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Antipasto";
-    src: url("resources/fonts/Antipasto.otf");
+    src: url("../../resources/fonts/Antipasto.otf");
 }
 
 @font-face {
     font-family: "Comfortaa";
-    src: url("resources/fonts/Comfortaa.otf");
+    src: url("../../resources/fonts/Comfortaa.otf");
 }
 
 body,
@@ -14,15 +14,7 @@ html {
     margin: 0;
     font-family: "Comfortaa", "Helvetica", sans-serif;
     font-size: 120%;
-}
-
-.heading {
-    background-color: #34434a;
-    color: #cecece;
-    position: fixed;
-    z-index: 2;
-    width: 100%;
-    height: 45px;
+    line-height: 1.5;
 }
 
 .header {
@@ -31,13 +23,13 @@ html {
     position: fixed;
     z-index: 1;
     width: 100%;
-    height: 45px;
+    height: 55px;
 }
 
 .header-bg {
     transition: 0.2s;
     background-color: #34434a;
-    color: #cecece;
+    color: #ffffff;
 }
 
 .header h5,
@@ -54,13 +46,60 @@ i {
 }
 
 .header i {
-    right: 15px;
-    font-size: 21px
+    right: 20px;
+    font-size: 21px;
+}
+
+.header i:hover {
+    cursor: pointer;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav #closeBtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 40px;
+    margin-left: 50px;
 }
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("resources/img/hero.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../resources/img/hero.jpg");
     height: 95%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-image.alt {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../resources/img/hero.jpg");
+    height: 45%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -122,6 +161,10 @@ svg {
     color: white;
 }
 
+.section a {
+    color: #ffffff;
+}
+
 .content {
     width: 80%;
     max-width: 1000px;
@@ -131,14 +174,31 @@ svg {
     margin-bottom: 80px;
 }
 
+.button {
+    transition: background-color 0.2s ease-in-out;
+    background-color: transparent;
+    border-radius: 3px;
+    box-shadow: inset 0 0 0 2px #fff;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: 600;
+    height: 3.125em;
+    letter-spacing: 0.225em;
+    line-height: 3.125em;
+    padding: 0 2.75em;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
 #section-1 {
     background-color: #273034;
     margin-top: -30px;
-}
-
-#section-1 a {
-    color: #ffffff;
-    line-height: 1.5;
 }
 
 #section-2 {
@@ -147,4 +207,8 @@ svg {
 
 #section-3 {
     background-color: #221d1b;
+}
+
+#section-4 {
+    background-color: #0e1215;
 }

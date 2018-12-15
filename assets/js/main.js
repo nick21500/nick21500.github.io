@@ -6,13 +6,20 @@ $(function () {
     "use strict";
 
     var threshold = $("#section-1").offset().top;
-    
-    $(window).scroll(function(){
+    $(window).scroll(function () {
         if (window.pageYOffset > threshold) {
             $(".header").addClass("header-bg");
         } else {
             $(".header").removeClass("header-bg");
         }
+    });
+    
+    $("#menu").on("click", function() {
+        $("#mySidenav").css("width", "250px");
+    });
+    
+    $("#closeBtn").on("click", function() {
+        $("#mySidenav").css("width", "0");
     });
 
 });
