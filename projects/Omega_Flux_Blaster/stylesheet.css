@@ -95,6 +95,10 @@ p {
     text-decoration: underline;
 }
 
+footer {
+    font-family: "Courier"
+}
+
 /* ------------------------------ */
 
 .content {
