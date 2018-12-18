@@ -33,7 +33,7 @@ html {
 }
 
 .header h5,
-i {
+.header i {
     position: absolute;
     margin-top: 0;
     margin-bottom: 0;
@@ -198,6 +198,9 @@ svg {
 
 #section-1 {
     background-color: #273034;
+}
+
+.short {
     margin-top: -30px;
 }
 
