@@ -21,5 +21,5 @@ $(function () {
     $("#closeBtn").on("click", function() {
         $("#mySidenav").css("width", "0");
     });
-
+        
 });
