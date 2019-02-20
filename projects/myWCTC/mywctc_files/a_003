@@ -1,0 +1,1 @@
+Liferay.Language={get:function(c,e){var a=this;var b=themeDisplay.getPathContext()+"/language/"+themeDisplay.getLanguageId()+"/"+c+"/";if(e){if(typeof e=="string"){b+=e}else{if(Liferay.Util.isArray(e)){b+=e.join("/")}}}var d=a._cache[b];if(d){return d}AUI().use("aui-io").io(b,{sync:true,on:{complete:function(f,g){d=g.responseText}},type:"GET"});a._cache[b]=d;return d},_cache:{}};

@@ -1,0 +1,25 @@
+.newSelectMenu {
+    font-size: 1.3em;
+    font-weight: bold;
+    height: 40px;
+    border: none;
+    background-image: linear-gradient(bottom, #003f7b 30%, #0076c0 80%);
+    background-image: -o-linear-gradient(bottom, #003f7b 30%, #0076c0 80%);
+    background-image: -moz-linear-gradient(bottom, #003f7b 30%, #0076c0 80%);
+    background-image: -webkit-linear-gradient(bottom, #003f7b 30%, #0076c0 80%);
+    background-image: -ms-linear-gradient(bottom, #003f7b 30%, #0076c0 80%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.3, #003f7b), color-stop(0.8, #0076c0));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#003f7b', endColorstr='#0076c0')";
+    color: white;
+}
+
+.newSelectMenu:hover {
+    background: #8d8c8d;
+    cursor: pointer;
+}
+
+.newSelectMenu option, .newSelectMenu optgroup {
+    background-color: white;
+    color: black;
+    font-weight: normal;
+}
