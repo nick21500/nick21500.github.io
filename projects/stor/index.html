@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:v-slot="http://www.w3.org/1999/XSL/Transform">
+<head>
+    <meta charset="utf-8">
+    <title>Stor</title>
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+<body>
+<div id="app">
+
+    <v-app id="inspire">
+
+        <v-navigation-drawer
+                absolute
+                temporary
+                v-model="drawer"
+                app
+        >
+            <v-img src="assets/img/logo-inverse.png">
+                <v-layout pa-2 column fill-height class="lightbox white--text">
+                    <v-spacer></v-spacer>
+                    <v-flex shrink>
+                        <div class="subheading">Nic Orlandini • Stor+</div>
+                    </v-flex>
+                </v-layout>
+            </v-img>
+            <v-list>
+                <v-list-tile @click="changePage('Products')">
+                    <v-list-tile-action>
+                        <v-icon>view_list</v-icon>
+                    </v-list-tile-action>
+                    <v-list-tile-content>
+                        <v-list-tile-title>Products</v-list-tile-title>
+                    </v-list-tile-content>
+                </v-list-tile>
+                <v-divider></v-divider>
+                <v-list-tile @click="changePage('Cart')">
+                    <v-list-tile-action>
+                        <v-icon>shopping_cart</v-icon>
+                    </v-list-tile-action>
+                    <v-list-tile-content>
+                        <v-list-tile-title>Cart</v-list-tile-title>
+                    </v-list-tile-content>
+                </v-list-tile>
+            </v-list>
+        </v-navigation-drawer>
+
+        <v-toolbar color="primary" dark fixed app>
+            <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
+            <v-toolbar-title class="logo">Stor</v-toolbar-title>
+            <v-layout justify-end>
+                <v-toolbar-title class="subtitle">"I know it's ugly, shut up"&nbsp;</v-toolbar-title>™
+            </v-layout>
+        </v-toolbar>
+
+        <v-content>
+
+            <v-container v-if="currentPage === 'Products'" fluid fill-height>
+                <v-layout
+                        justify-space-around
+                        align-center
+                        column
+                        fill-height
+                >
+
+                    <v-flex v-for="(product, i) in products"
+                            class="card"
+                            pt-5
+                            @click="changePage('Product Info')">
+                        <v-hover>
+                            <v-card hover raised slot-scope="{hover}">
+                                <v-layout row no-wrap align-center>
+                                    <v-flex xs3 pl-3>
+                                        <v-img
+                                                :src="product.displayImage"
+                                                height="125px"
+                                                width="125px"
+                                        ></v-img>
+                                    </v-flex>
+
+                                    <v-divider
+                                            class="mx-3"
+                                            inset
+                                            vertical
+                                    ></v-divider>
+
+                                    <v-flex xs6>
+                                        <v-card-title>
+                                            <h3>{{product.name}}</h3>
+                                        </v-card-title>
+                                        <v-card-text>
+                                            <h5>{{product.vendor}}</h5>
+                                        </v-card-text>
+
+                                        <!-- Stor+ Flag -->
+                                        <v-tooltip bottom>
+                                            <template v-slot:activator="{on}">
+                                                <v-img v-if="product.plus === true"
+                                                       src="assets/img/plus-sm.png"
+                                                       class="plus-flag"
+                                                       v-on="on"
+                                                ></v-img>
+                                            </template>
+                                            <span>Stor+ Eligible</span>
+                                        </v-tooltip>
+
+                                        <v-rating
+                                                background-color="red lighten-3"
+                                                color="red"
+                                        ></v-rating>
+
+                                        <v-card-text>
+                                            <h4>${{ product.displayPrice }}</h4>
+                                        </v-card-text>
+                                    </v-flex>
+                                </v-layout>
+                            </v-card>
+                        </v-hover>
+                    </v-flex>
+                </v-layout>
+            </v-container>
+
+            <v-container v-if="currentPage === 'Product Info'">
+                <v-layout>
+                    <v-flex>
+                        <product premium id0></product>
+                    </v-flex>
+                </v-layout>
+            </v-container>
+
+            <v-container v-if="currentPage === 'Cart'" fluid fill-height>
+                <v-layout
+                        justify-center
+                        align-center
+                >
+                    <v-flex text-xs-center>
+                        <p>Hello, Cart</p>
+                    </v-flex>
+                </v-layout>
+            </v-container>
+
+        </v-content>
+
+        <v-footer color="primary" app inset>
+            <v-spacer></v-spacer>
+            <span class="white--text">&copy; Frameworks Suck {{ new Date().getFullYear() }}</span>
+            <v-spacer></v-spacer>
+        </v-footer>
+
+    </v-app>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
