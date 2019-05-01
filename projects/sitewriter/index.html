@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>SiteWriter</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dokdo|Indie+Flower|Lobster|Oswald|Quicksand|Roboto|Amatic+SC|Anton|Cinzel|Luckiest+Guy|Pacifico|Righteous|Roboto+Slab|Special+Elite" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <div id="write">
+        <h1>SiteWriter<span style="font-family: roboto">™</span></h1>
+        <div class="row">
+            <div class="column-l">
+                <form class="write-form" id="write-text">
+                    <label for="write-heading">Heading</label> <br>
+                    <input name="write-heading" type="text" class="input" id="write-heading" placeholder="My Beautiful Website">
+                    <br>
+                    <br>
+                    <label for="write-subheading">Subheading</label> <br>
+                    <input name="write-subheading" type="text" class="input" id="write-subheading0" placeholder="Check out my content!">
+                    <br>
+                    <br>
+                    <label for="no">Image</label> <br>
+                    <label style="font-size: 55%; font-family: Roboto; font-weight: normal" for="write-image0" class="custom-file-upload">
+                        Choose Image
+                    </label>
+                    <input type="file" accept="image/*" class="input img" id="write-image0">
+                    <p class="filename" id="write-filename0"></p>
+                    <br>
+                    <br>
+                    <label for="write-body">Body</label> <br>
+                    <textarea name="write-body" class="input" id="write-body0" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."></textarea>
+                    <br>
+                    <br>
+                    <div id="additional-fields">
+
+                    </div>
+                    <div class="btn-group" id="write-add">
+                        <button type="button" class="add" id="add-subheading">Add Subheading</button>
+                        <button type="button" class="add" id="add-image">Add Image</button>
+                        <button type="button" class="add" id="add-body">Add Body</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="column-r">
+                <form class="write-form" id="write-style">
+                    <label for="style-background">Background Color &nbsp;</label>
+                    <input name="style-background" type="color" class="input" id="style-background" value="#ffffff">
+                    <br>
+                    <br>
+                    <label for="style-font">Heading Font &nbsp;</label>
+                    <select name="style-font" class="input font" id="style-heading-font">
+                        <option style="font-family: 'Roboto'" value="roboto" selected>Roboto</option>
+                        <option style="font-family: 'Roboto Slab'" value="roboto slab">Roboto Slab</option>
+                        <option style="font-family: 'Cinzel'" value="cinzel">Cinzel</option>
+                        <option style="font-family: 'Quicksand'" value="quicksand">Quicksand</option>
+                        <option style="font-family: 'Righteous'" value="righteous">Righteous</option>
+                        <option style="font-family: 'Oswald'" value="oswald">Oswald</option>
+                        <option style="font-family: 'Anton'" value="anton">Anton</option>
+                        <option style="font-family: 'Special Elite'" value="special elite">Special Elite</option>
+                        <option style="font-family: 'Luckiest Guy'" value="luckiest guy">Luckiest Guy</option>
+                        <option style="font-family: 'Dokdo'" value="dokdo">Dokdo</option>
+                        <option style="font-family: 'Amatic SC'" value="amatic sc">Amatic SC</option>
+                        <option style="font-family: 'Indie Flower'" value="indie flower">Indie Flower</option>
+                        <option style="font-family: 'Pacifico'" value="pacifico">Pacifico</option>
+                        <option style="font-family: 'Lobster'" value="lobster">Lobster</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="style-font">Text Font &nbsp;</label>
+                    <select name="style-font" class="input font" id="style-font">
+                        <option style="font-family: 'Roboto'" value="roboto" selected>Roboto</option>
+                        <option style="font-family: 'Roboto Slab'" value="roboto slab">Roboto Slab</option>
+                        <option style="font-family: 'Cinzel'" value="cinzel">Cinzel</option>
+                        <option style="font-family: 'Quicksand'" value="quicksand">Quicksand</option>
+                        <option style="font-family: 'Righteous'" value="righteous">Righteous</option>
+                        <option style="font-family: 'Oswald'" value="oswald">Oswald</option>
+                        <option style="font-family: 'Anton'" value="anton">Anton</option>
+                        <option style="font-family: 'Special Elite'" value="special elite">Special Elite</option>
+                        <option style="font-family: 'Luckiest Guy'" value="luckiest guy">Luckiest Guy</option>
+                        <option style="font-family: 'Dokdo'" value="dokdo">Dokdo</option>
+                        <option style="font-family: 'Amatic SC'" value="amatic sc">Amatic SC</option>
+                        <option style="font-family: 'Indie Flower'" value="indie flower">Indie Flower</option>
+                        <option style="font-family: 'Pacifico'" value="pacifico">Pacifico</option>
+                        <option style="font-family: 'Lobster'" value="lobster">Lobster</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="style-text">Text Color &nbsp;</label>
+                    <input name="style-text" type="color" class="input" id="style-text" value="#000000">
+                    <br>
+                    <br>
+                    <label for="style-align">Alignment &nbsp;</label>
+                    <select name="style-align" class="input" id="style-align">
+                        <option value="left" selected>&#xf036; &nbsp; Left</option>
+                        <option value="center">&#xf037; &nbsp; Center</option>
+                        <option value="right">&#xf038; &nbsp; Right</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button type="button" id="write-button">Site</button>
+        </div>
+
+        <button type="button" id="toggle-dark">Dark</button>
+
+    </div>
+
+    <div id="site">
+
+        <div id="content">
+
+        </div>
+        
+        <h6>Made with Sitewriter - Nicolas Orlandini</h6>
+
+        <div class="button-container">
+            <button type="button" id="site-button">Write</button>
+        </div>
+
+    </div>
+
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
