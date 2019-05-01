@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <title>Crossword!</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1 class="title">Crossword!</h1>
+
+    <div class="row">
+        <div class="column-l">
+            <div id="crosswordWrapper"></div>
+        </div>
+        <div class="column-r">
+            <p class="category">Movies</p>
+            <div class="column-rl">
+                <h2>Across</h2>
+                <ul class="clues" id="cluesAcross">
+                    <li>2 Across</li>
+                    <li>5 Across</li>
+                    <li>6 Across</li>
+                </ul>
+            </div>
+            <div class="column-rr">
+                <h2>Down</h2>
+                <ul class="clues" id="cluesDown">
+                    <li>1 Down</li>
+                    <li>3 Down</li>
+                    <li>4 Down</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="center">
+        <button id="check">Check</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
