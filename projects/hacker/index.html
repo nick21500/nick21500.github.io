@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Hacker</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <div id="counter">
+        <p>Hacks: <span id="count">0</span></p>
+    </div>
+    <div id="hack">
+        <p>Press E to hack.</p>
+    </div>
+
+    <div class="sidebar left">
+        <button class="side-item disabled" id="c1" price="0" item-type="cpu" val="2">
+            CPU power x2
+        </button>
+        <button class="side-item disabled" id="c2" price="0" item-type="cpu" val="4">
+            CPU power x4
+        </button>
+        <button class="side-item disabled" id="c3" price="0" item-type="cpu" val="8">
+            CPU power x8
+        </button>
+        <button class="side-item disabled" id="c4" price="0" item-type="cpu" val="16">
+            CPU power x16
+        </button>
+        <button class="side-item disabled" id="c5" price="0" item-type="cpu" val="32">
+            CPU power x32
+        </button>
+
+        <button class="side-item disabled" id="spacer"><img class="robot invisible" src="resources/img/robot.png"></button>
+
+        <button class="side-item disabled" id="a1" price="0" item-type="auto" val="1">
+            Auto-hacker x1
+        </button>
+        <button class="side-item disabled" id="a2" price="0" item-type="auto" val="2">
+            Auto-hacker x2
+        </button>
+        <button class="side-item disabled" id="a3" price="0" item-type="auto" val="4">
+            Auto-hacker x4
+        </button>
+        <button class="side-item disabled" id="a4" price="0" item-type="auto" val="8">
+            Auto-hacker x8
+        </button>
+        <button class="side-item disabled" id="a5" price="0" item-type="auto" val="16">
+            Auto-hacker x16
+        </button>
+    </div>
+
+    <div class="icons">
+        <div id="img-cpu">
+            <img src="resources/img/cpu.png" class="disabled" id="c1i">
+            <img src="resources/img/cpu.png" class="disabled" id="c2i">
+            <img src="resources/img/cpu.png" class="disabled" id="c3i">
+            <img src="resources/img/cpu.png" class="disabled" id="c4i">
+            <img src="resources/img/cpu.png" class="disabled" id="c5i">
+        </div>
+        <div id="img-auto">
+            <img src="resources/img/auto.png" class="disabled" id="a1i">
+            <img src="resources/img/auto.png" class="disabled" id="a2i">
+            <img src="resources/img/auto.png" class="disabled" id="a3i">
+            <img src="resources/img/auto.png" class="disabled" id="a4i">
+            <img src="resources/img/auto.png" class="disabled" id="a5i">
+        </div>
+    </div>
+
+    <div class="sidebar right">
+        <p class="tooltip">Hover over an upgrade to get information about it, and how many hacks it takes to unlock.</p>
+        <p class="credits">Icons made by <a href="https://www.flaticon.com/authors/freepik">Freepik</a> from <a href="https://www.flaticon.com/">www.flaticon.com</a></p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body></html>
