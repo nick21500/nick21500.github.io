@@ -102,10 +102,13 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    display: flex;              /* establish flex container */
-    flex-direction: column;     /* stack flex items vertically */
-    justify-content: center;    /* center items vertically, in this case */
-    align-items: center;        
+    display: flex;
+    /* establish flex container */
+    flex-direction: column;
+    /* stack flex items vertically */
+    justify-content: center;
+    /* center items vertically, in this case */
+    align-items: center;
 }
 
 .hero-image.alt {
@@ -253,4 +256,27 @@ svg {
 .number {
     font-family: "Comfortaa", sans-serif;
     font-size: 0.9em;
+}
+
+.row {
+    /border: 1px solid green;
+    display: flex;
+}
+
+.column {
+    /border: 1px solid blue;
+    flex: 50%
+}
+
+.column-item.title {
+    /border: 1px solid red;
+    padding: 0px;
+    height: 90px;
+}
+
+.column-item:not(.title) {
+    /border: 1px solid red;
+    height: 110px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
