@@ -1,0 +1,95 @@
+html {
+    background-image: url("../assets/bg.jpg");
+    box-sizing: border-box;
+    overflow: hidden;
+    user-select: none;
+}
+
+#container-container {
+    /border: 1px solid purple;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#ring-container {
+    /border: 1px solid red;
+    height: 915px;
+    width: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+#control-container-container {
+    /border: 1px solid yellow;
+    width: 30%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#control-container {
+    /border: 1px solid blue;
+    height: 650px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#decoder-box {
+    /border: 1px solid white;
+    height: 650px;
+    width: 650px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#decoder-box img {
+    /border: 1px solid black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.control {
+    height: 180px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.control img {
+    height: 100%;
+}
+
+.control img.button:hover {
+    cursor: pointer;
+    filter: brightness(70%)
+}
+
+.control img.button:active {
+    filter: brightness(40%)
+}
+
+/* Flash class and keyframe animation */
+.flash{
+  color:#f2f;
+	-webkit-animation: flash linear 1s infinite;
+	animation: flash linear 1s infinite;
+}
+@-webkit-keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .3; } 
+	100% { opacity: 1; }
+}
+@keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .3; } 
+	100% { opacity: 1; }
+}
