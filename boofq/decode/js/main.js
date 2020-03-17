@@ -156,7 +156,7 @@ $(function () {
     //Check for "FOG"
     $("#eye").on("click", function () {
         if ((finaldeg2 - finaldeg1 == 135 || finaldeg2 - finaldeg1 == -225) && (finaldeg3 - finaldeg2 == 135 || finaldeg3 - finaldeg2 == -225)) {
-            window.location.replace("http://nicolasorlandini.rocks/boofq/fog/index.html");
+            window.location.replace("http://nicolasorlandini.rocks/boofq/fog");
         }
     })
 
