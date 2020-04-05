@@ -5,5 +5,8 @@ html {
 }
 
 #time {
+    height: 50px;
+    width: 75px;
     color: white;
+    visibility: hidden;
 }

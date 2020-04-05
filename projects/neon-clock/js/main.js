@@ -5,14 +5,6 @@
 $(function () {
     "use strict";
 
-    /*
-    function loadImage(x) {
-        var preload = new createjs.LoadQueue();
-        preload.addEventListener("fileload", handleFileComplete);
-        preload.loadFile("../images/" + x + ".png");
-    }
-    */
-
     window.setInterval(function () {
         var now = new Date();
 
@@ -23,14 +15,18 @@ $(function () {
         hours = ('0' + hours).slice(-2)
 
         var minutes = now.getMinutes();
+        
+        minutes = ('0' + minutes).slice(-2);
 
         var time = hours + "" + minutes
-
-        //$("#time").text(time);
-
-        $("html").css("background-image", "url(images/" + time + ".png)")
         
-        //loadImage(time + 1);
+        console.log(time);
+
+        $("html").css("background-image", "url(../images/" + time + ".png)")
+        
+        var timeplusone = parseInt(time) + 1;
+        
+        $("#time").css("background-image", "url(../images/" + timeplusone + ".png)")
 
     }, 1000);
 
