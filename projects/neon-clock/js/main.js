@@ -22,11 +22,11 @@ $(function () {
         
         console.log(time);
 
-        $("html").css("background-image", "url(../images/" + time + ".png)")
+        $("html").css("background-image", "url(/images/" + time + ".png)")
         
         var timeplusone = parseInt(time) + 1;
         
-        $("#time").css("background-image", "url(../images/" + timeplusone + ".png)")
+        $("#time").css("background-image", "url(/images/" + timeplusone + ".png)")
 
     }, 1000);
 
