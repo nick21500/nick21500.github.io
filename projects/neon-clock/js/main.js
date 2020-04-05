@@ -5,11 +5,13 @@
 $(function () {
     "use strict";
 
+    /*
     function loadImage(x) {
         var preload = new createjs.LoadQueue();
         preload.addEventListener("fileload", handleFileComplete);
         preload.loadFile("../images/" + x + ".png");
     }
+    */
 
     window.setInterval(function () {
         var now = new Date();
@@ -26,9 +28,9 @@ $(function () {
 
         //$("#time").text(time);
 
-        $("html").css("background-image", "url(../images/" + time + ".png)")
+        $("html").css("background-image", "url(images/" + time + ".png)")
         
-        loadImage(time + 1);
+        //loadImage(time + 1);
 
     }, 1000);
 
