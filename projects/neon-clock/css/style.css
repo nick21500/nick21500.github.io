@@ -5,8 +5,13 @@ html {
 }
 
 #time {
-    height: 50px;
-    width: 75px;
-    color: white;
+    border: 1px solid red;
+    height: 100px;
+    width: 180px;
     visibility: hidden;
+}
+
+#time img {
+    height: 100%;
+    width: 100%;
 }
