@@ -22,14 +22,14 @@ $(function () {
         
         console.log("current: " + time);
 
-        $("html").css("background-image", "url(/images/" + time + ".png)")
+        $("html").css("background-image", "url(../images/" + time + ".png)")
         
         var timeplusone = parseInt(time) + 1;
         timeplusone = ('0000' + timeplusone).slice(-4);
         
         console.log("next: " + timeplusone);
         
-        $("#time").css("background-image", "url(/images/" + timeplusone + ".png)")
+        $("#time").css("background-image", "url(../images/" + timeplusone + ".png)")
 
     }, 1000);
 
