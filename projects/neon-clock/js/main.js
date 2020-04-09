@@ -5,11 +5,13 @@
 $(function () {
     "use strict";
     
+    var mobile;
+    
     if ($(window).width() >= 1200){
-        alert("not mobile");
+        mobile = "";
     }
     else {
-        alert("mobile");
+        mobile = "mobile/";
     }
 
     window.setInterval(function () {
@@ -29,7 +31,7 @@ $(function () {
 
         //console.log("current: " + time);
 
-        $("html").css("background-image", "url(images/" + time + ".png)")
+        $("html").css("background-image", "url(images/" + mobile + time + ".png)")
 
         var timeplusone = parseInt(time) + 1;
         timeplusone = ('0000' + timeplusone).slice(-4);
