@@ -1,9 +1,16 @@
 /* jslint browser: true, devel: true */
 /* eslint-disable no-unused-vars, no-console */
-/* global $ */
+/* global $, alert, window */
 
 $(function () {
     "use strict";
+    
+    if ($(window).width() < 720){
+        alert("mobile");
+    }
+    else {
+        alert("not mobile");
+    }
 
     window.setInterval(function () {
         var now = new Date();
