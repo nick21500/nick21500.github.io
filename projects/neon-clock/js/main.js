@@ -5,11 +5,11 @@
 $(function () {
     "use strict";
     
-    if ($(window).width() < 720){
-        alert("mobile");
+    if ($(window).width() >= 1200){
+        alert("not mobile");
     }
     else {
-        alert("not mobile");
+        alert("mobile");
     }
 
     window.setInterval(function () {
