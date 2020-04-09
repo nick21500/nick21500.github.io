@@ -38,7 +38,7 @@ $(function () {
 
         //console.log("next: " + timeplusone);
 
-        $("#time img").attr("src", "images/" + timeplusone + ".png");
+        $("#time img").attr("src", "images/" + mobile + timeplusone + ".png");
 
     }, 1000);
 
