@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <title>Employee Workstation #98</title>
+    <link rel="stylesheet" type="text/css" href="css/98.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="desktop-icons">
+        <div class="desktop-icon" id="computer-icon">
+            <div>
+                <img id="computer" src="assets/img/icons/computer.png">
+            </div>
+            <div>
+                Computer
+            </div>
+        </div>
+        <div class="desktop-icon" id="paint-icon">
+            <div>
+                <img id="paint" src="assets/img/icons/paint.png">
+            </div>
+            <div>
+                Paint
+            </div>
+        </div>
+    </div>
+
+    <div class="window" id="computer-window">
+        <div class="title-bar">
+            <div class="title-bar-text">Exploring - My Computer</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <div id="top-toolbar">
+                <div>File</div>
+                <div>Edit</div>
+                <div>View</div>
+                <div>Go</div>
+                <div>Favorites</div>
+                <div>Help</div>
+            </div>
+            <div id="explorer">
+                <div id="tree">
+                    <ul class="tree-view">
+                        <li>
+                            [C:]
+                            <ul>
+                                <li>Documents</li>
+                                <li>Pictures</li>
+                                <li>Videos</li>
+                            </ul>
+                        </li>
+                        <li>
+                            [X:]
+                            <ul>
+                                <li>Memes</li>
+                                <li>Reaction pictures</li>
+                            </ul>
+                        </li>
+                        <li>
+                            [Z:]
+                            <ul>
+                                <li>CLASSIFIED</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="content">
+                    <div id="documents">
+                        <div class="desktop-icon">
+                            <div>
+                                <img id="expenses" src="assets/img/icons/documents.png">
+                            </div>
+                            <div style="color: black">
+                                Expenses
+                            </div>
+                        </div>
+                        <div class="desktop-icon">
+                            <div>
+                                <img id="files" src="assets/img/icons/documents.png">
+                            </div>
+                            <div style="color: black">
+                                Files
+                            </div>
+                        </div>
+                        <div class="desktop-icon">
+                            <div>
+                                <img id="reports" src="assets/img/icons/documents.png">
+                            </div>
+                            <div style="color: black">
+                                Reports
+                            </div>
+                        </div>
+                    </div>
+                    <div id="classified">
+                        <div class="desktop-icon">
+                            <div>
+                                <img id="corrupted1" src="assets/img/icons/document.png">
+                            </div>
+                            <div style="color: black">
+                                CRPTD
+                            </div>
+                        </div>
+                        <div class="desktop-icon">
+                            <div>
+                                <img id="corrupted2" src="assets/img/icons/document.png">
+                            </div>
+                            <div style="color: black">
+                                CRPTD
+                            </div>
+                        </div>
+                        <div class="desktop-icon" id="memo">
+                            <div>
+                                <img id="memoo" src="assets/img/icons/document.png">
+                            </div>
+                            <div style="color: black">
+                                Memo
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="bottom-toolbar">
+                <div>
+                    3 object(s)
+                </div>
+                <div>
+                    My Computer
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="window" id="paint-window">
+        <div class="title-bar">
+            <div class="title-bar-text">Paint</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <canvas id="sheet" width="580" height="362"></canvas>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/3.6.3/fabric.min.js"></script>
+    <script src="js/main.js"></script>
+</body></html>

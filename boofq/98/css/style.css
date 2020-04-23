@@ -1,0 +1,144 @@
+html {
+    background-color: #008080;
+    user-select: none;
+}
+
+
+.desktop-icon {
+    /border: 1px solid red;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+    padding: 2px;
+    text-align: center;
+}
+
+.desktop-icon:hover {
+    outline: 1px dotted #000000;
+}
+
+.desktop-icon div {
+    text-align: center;
+    color: white;
+}
+
+
+#paint-window {
+    position: absolute;
+    bottom: 50px;
+    right: 80px;
+    height: 400px;
+    width: 600px;
+    visibility: hidden;
+}
+
+#paint-window #sheet {
+    background-color: white;
+    border: 1px solid grey;
+}
+
+
+#computer-window {
+    position: absolute;
+    top: 100px;
+    left: 250px;
+    height: 600px;
+    width: 800px;
+    visibility: hidden;
+}
+
+#top-toolbar {
+    box-shadow: inset -1px -1px #ffffff,
+        inset 1px 1px #808080, inset -2px -2px #dfdfdf,
+        inset 2px 2px #0a0a0a;
+    padding: 10px;
+}
+
+#top-toolbar div {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#explorer {
+    /border: 2px solid blue;
+    height: 500px;
+    margin-top: 3px;
+}
+
+#explorer div {
+    display: inline-block;
+}
+
+#explorer #tree {
+    /border: 1px solid red;
+    width: 35%;
+    height: 100%;
+}
+
+#explorer #tree ul {
+    height: 98%;
+}
+
+#explorer #tree li li:hover {
+    cursor: not-allowed;
+}
+
+#explorer #tree li:nth-child(1) li:nth-child(1):hover {
+    cursor: pointer;
+}
+
+#explorer #tree li:nth-child(3) li:nth-child(1):hover {
+    cursor: pointer;
+}
+
+#explorer #content .desktop-icon {
+    cursor: not-allowed;
+}
+
+#explorer #content .desktop-icon#memo {
+    cursor: default;
+}
+
+#explorer #content {
+    /border: 1px solid red;
+    width: 61%;
+    height: 491px;
+    position: absolute;
+    right: 11px;
+    background: #ffffff;
+    box-shadow: inset -1px -1px #ffffff,
+        inset 1px 1px #808080, inset -2px -2px #dfdfdf,
+        inset 2px 2px #0a0a0a;
+    padding: 6px;
+    margin: 0;
+}
+
+#content #documents {
+    visibility: hidden;
+}
+
+#content #classified {
+    visibility: hidden;
+}
+
+#content #classified {
+    margin-left: -232px;
+}
+
+#bottom-toolbar {
+    position: absolute;
+    bottom: 3px;
+    left: 6px;
+    box-shadow: inset -1px -1px #ffffff,
+        inset 1px 1px #808080, inset -2px -2px #dfdfdf,
+        inset 2px 2px #0a0a0a;
+    padding: 3px;
+    margin: 5px;
+}
+
+#bottom-toolbar div {
+    display: inline-block;
+    width: 381px;
+    border: 2px solid grey;
+    padding-left: 3px;
+}
