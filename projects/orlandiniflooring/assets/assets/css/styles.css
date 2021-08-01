@@ -1,0 +1,175 @@
+:root {
+  --accent-color: #3a99cb;
+  --red-color: #cb3a3a;
+  --translucent-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-logo {
+  height: 72px;
+}
+
+html, body {
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+.swiper-slide .caption-panel {
+  position: absolute;
+  bottom: 8%;
+  right: 10%;
+  color: #dedede;
+  font-variant: small-caps;
+}
+
+.swiper-slide .dimmer {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.swiper-slide .caption-panel h1 {
+  font-size: 6em;
+  display: none;
+}
+
+.swiper-slide .caption-panel h3 {
+  font-size: 3em;
+  float: left;
+}
+
+@media (max-width: 767px) {
+  .swiper-slide .caption-panel h3 {
+    font-size: 2em;
+  }
+}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section-dark {
+  background-color: black;
+}
+
+.section .heading-row {
+  margin-bottom: 32px;
+}
+
+ul.item-list {
+  list-style-type: none;
+}
+
+.item-list li {
+  text-indent: -1.4em;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.item-list li:before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  float: left;
+  width: 1.4em;
+  color: var(--accent-color);
+}
+
+.item-list li.ic-red:before {
+  color: var(--red-color);
+}
+
+.item-list li.ic-translucent:before {
+  color: var(--translucent-color);
+}
+
+.item-list li.general:before {
+  content: "\f009";
+}
+
+.item-list li.phone:before {
+  content: "\f879";
+}
+
+.item-list li.fax:before {
+  content: "\f1ac";
+}
+
+.item-list li.link:before {
+  content: "\f0c1";
+}
+
+.item-list li.address:before {
+  content: "\f3c5";
+}
+
+.footer-dark li {
+  font-size: 1.3rem;
+  opacity: 0.6;
+}
+
+.jtcover {
+}
+
+.center-element {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.toc p {
+  font-size: 24px;
+}
+
+.toc ul {
+  font-size: 24px;
+}
+
+.toc {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.image-box {
+  height: 255px;
+}
+
+@media (max-width: 767px) {
+  .nav-logo {
+  }
+}
+
+.collapse.show {
+}
+
+#popout_menu {
+  width: 100%;
+  position: absolute;
+  height: 101px;
+  transform: translateX(-9px) translateY(101px);
+}
+
+@media (max-width: 767px) {
+  h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .img-thumbnail {
+    width: 235px;
+  }
+}
+
+@media (max-width: 767px) {
+  .item h4, .item li {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .mobilehide {
+    display: none;
+  }
+}
+
