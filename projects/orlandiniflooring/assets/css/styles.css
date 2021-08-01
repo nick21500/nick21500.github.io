@@ -36,6 +36,12 @@ html, body {
   float: left;
 }
 
+@media (max-width: 767px) {
+  .swiper-slide .caption-panel h3 {
+    font-size: 2em;
+  }
+}
+
 .section {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -55,7 +61,7 @@ ul.item-list {
 
 .item-list li {
   text-indent: -1.4em;
-  font-size: 21px;
+  font-size: 16px;
   margin-bottom: 12px;
 }
 
@@ -114,8 +120,20 @@ ul.item-list {
   font-size: 24px;
 }
 
+@media (max-width: 767px) {
+  .toc p {
+    font-size: 16px;
+  }
+}
+
 .toc ul {
   font-size: 24px;
+}
+
+@media (max-width: 767px) {
+  .toc ul {
+    font-size: 16px;
+  }
 }
 
 .toc {
@@ -125,5 +143,61 @@ ul.item-list {
 
 .image-box {
   height: 255px;
+}
+
+@media (max-width: 767px) {
+  .image-box {
+    height: 100px;
+    width: 100px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-logo {
+  }
+}
+
+.collapse.show {
+}
+
+#popout_menu {
+  width: 100%;
+  position: absolute;
+  height: 101px;
+  transform: translateX(-9px) translateY(101px);
+}
+
+@media (max-width: 767px) {
+  h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .img-thumbnail {
+    width: 235px;
+    max-height: 225px;
+  }
+}
+
+@media (max-width: 767px) {
+  .item h4, .item li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .mobilehide {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .jumbotron {
+    max-height: 130px;
+    margin-bottom: -6px;
+  }
 }
 
