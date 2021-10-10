@@ -96,7 +96,7 @@ a {
 }
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../resources/img/hero.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     height: 95%;
     background-position: center;
     background-repeat: no-repeat;
@@ -112,7 +112,6 @@ a {
 }
 
 .hero-image.alt {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../resources/img/hero.jpg");
     height: 45%;
     background-position: center;
     background-repeat: no-repeat;
@@ -160,12 +159,15 @@ a {
     color: white;
 }
 
-.hero-scroll {
+#hero-scroll {
     color: white;
-    width: 100%;
-    text-align: center;
     position: absolute;
     bottom: 10%;
+    z-index: 99;
+}
+
+#hero-scroll:hover {
+    cursor: pointer;
 }
 
 svg {
@@ -279,4 +281,16 @@ svg {
     height: 110px;
     padding-left: 5%;
     padding-right: 5%;
+}
+
+#curator-feed-default-feed-layout {
+    margin-top: 50px;
+    padding-bottom: 50px;
+    pointer-events: none;
+}
+
+#curator-feed-default-feed-layout a {
+    font-size: 60%;
+    color: rgba(255, 255, 255, 0.4);
+    pointer-events: all;
 }
