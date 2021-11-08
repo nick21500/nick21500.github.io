@@ -95,6 +95,14 @@ a {
     padding-top: 0px;
 }
 
+.sidenav #secretBtn {
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+    font-size: 2em;
+    margin-left: 50px;
+}
+
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     height: 95%;
@@ -293,4 +301,8 @@ svg {
     font-size: 60%;
     color: rgba(255, 255, 255, 0.4);
     pointer-events: all;
+}
+
+#preloader {
+    display: none;
 }

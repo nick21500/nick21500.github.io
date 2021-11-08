@@ -1,6 +1,6 @@
 /* jslint browser: true, devel: true */
 /* eslint-disable no-unused-vars, no-console */
-/* global $, alert, console, window */
+/* global $, alert, console, document, window */
 
 $(function () {
     "use strict";
