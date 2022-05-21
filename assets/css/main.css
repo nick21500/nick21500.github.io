@@ -8,13 +8,24 @@
     src: url("../../resources/fonts/Comfortaa.otf");
 }
 
+:root {
+    --hero-font: "Fira Mono";
+    --header-font: "Fira Mono";
+    --body-font: "Fira Mono";
+    --footer-font: "Fira Mono";
+}
+
 body,
 html {
     height: 100%;
     margin: 0;
-    font-family: "Comfortaa", sans-serif;
+    font-family: var(--body-font), sans-serif;
     font-size: 23px;
     line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--header-font), sans-serif;
 }
 
 a {
@@ -138,12 +149,12 @@ a {
     width: 75vw;
     text-align: center;
     color: white;
-    font-family: "Antipasto", sans-serif;
+    font-family: var(--hero-font), sans-serif;
 }
 
 .hero-text.t404 {
     top: 30%;
-    font-family: "Comfortaa", sans-serif;
+    font-family: var(--hero-font), sans-serif;
 }
 
 .hero-text h1 {
@@ -199,7 +210,7 @@ svg {
     width: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-family: "Inconsolata", monospace;
+    font-family: var(--footer-font), sans-serif;
 }
 
 .section {
@@ -269,23 +280,23 @@ svg {
 }
 
 .row {
-    /border: 1px solid green;
+    /* border: 1px solid green; */
     display: flex;
 }
 
 .column {
-    /border: 1px solid blue;
+    /* border: 1px solid blue; */
     flex: 50%
 }
 
 .column-item.title {
-    /border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 0px;
     height: 90px;
 }
 
 .column-item:not(.title) {
-    /border: 1px solid red;
+    /* border: 1px solid red; */
     height: 110px;
     padding-left: 5%;
     padding-right: 5%;
