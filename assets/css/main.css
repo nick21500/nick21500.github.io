@@ -1,13 +1,3 @@
-@font-face {
-    font-family: "Antipasto";
-    src: url("../../resources/fonts/Antipasto.otf");
-}
-
-@font-face {
-    font-family: "Comfortaa";
-    src: url("../../resources/fonts/Comfortaa.otf");
-}
-
 :root {
     --hero-font: "Fira Mono";
     --header-font: "Fira Mono";
@@ -24,7 +14,7 @@ html {
     line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5:not(#foot), h6 {
     font-family: var(--header-font), sans-serif;
 }
 
@@ -33,44 +23,28 @@ a {
 }
 
 .header {
-    transition: 0.2s;
-    color: rgba(0, 0, 0, 0);
     position: fixed;
     z-index: 1;
     width: 100%;
     height: 55px;
-}
-
-.header-bg {
-    transition: 0.2s;
-    background-color: #34434a;
-    color: #ffffff;
-}
-
-.header h5,
-.header i {
-    position: absolute;
-    margin-top: 0;
-    margin-bottom: 0;
-    top: 50%;
-    transform: translate(0, -50%);
-}
-
-.header h5 {
-    left: 15px;
+    /* border: 1px solid cyan; */
     user-select: none;
 }
 
-.header i {
+.header #menu {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
     right: 20px;
-    font-size: 1.2em;
+    color: white;
+    /* border: 1px solid red; */
 }
 
-.header i:hover {
+.header #menu:hover {
     cursor: pointer;
 }
 
-.sidenav {
+#sidenav {
     height: 100%;
     width: 0;
     position: fixed;
@@ -82,31 +56,43 @@ a {
     transition: 0.5s;
     padding-top: 60px;
     white-space: nowrap;
+    user-select: none;
 }
 
-.sidenav a {
+#sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 1.1em;
     color: #818181;
     display: block;
     transition: 0.3s;
+    /* border: 1px solid red; */
 }
 
-.sidenav a:hover {
+#sidenav a.sub {
+    padding-left: 50px;
+    font-size: 0.8em;
+    /* border: 1px solid green; */
+}
+
+#sidenav a:hover {
     color: #f1f1f1;
+    cursor: pointer;
 }
 
-.sidenav #closeBtn {
+#sidenav #close {
+    color: white;
     position: absolute;
-    top: 0;
-    right: 10px;
-    font-size: 2em;
-    margin-left: 50px;
-    padding-top: 0px;
+    top: 16px;
+    right: 22px;
+    font-size: larger;
+    /* border: 1px solid grey; */
+}
+#sidenav #close:hover {
+    cursor: pointer;
 }
 
-.sidenav #secretBtn {
+#sidenav #secretBtn {
     position: absolute;
     bottom: 30px;
     right: 10px;
@@ -146,10 +132,12 @@ a {
 }
 
 .hero-text {
-    width: 75vw;
+    width: 75%;
+    /* height: 500px; */
     text-align: center;
     color: white;
     font-family: var(--hero-font), sans-serif;
+    /* border: 1px solid white; */
 }
 
 .hero-text.t404 {
@@ -159,7 +147,10 @@ a {
 
 .hero-text h1 {
     text-align: center;
-    font-size: 4em;
+    margin: auto;
+    max-width: 75%;
+    font-size: auto;
+    /* border: 1px solid cyan; */
 }
 
 .hero-text button {
@@ -183,6 +174,7 @@ a {
     position: absolute;
     bottom: 10%;
     z-index: 99;
+    /* border: 1px solid blue; */
 }
 
 #hero-scroll:hover {
@@ -197,7 +189,8 @@ svg {
 }
 
 .footer {
-    background-color: #2a6d68;
+    font-family: var(--footer-font);
+    background-color: rgb(42, 109, 104);
     height: 100px;
     position: relative;
 }
@@ -211,24 +204,49 @@ svg {
     transform: translate(-50%, -50%);
     color: white;
     font-family: var(--footer-font), sans-serif;
+    /* border: 1px solid red; */
 }
 
 .section {
     height: auto;
     width: 100%;
-    display: inline-block;
-    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
     text-align: center;
     color: white;
 }
 
-.content {
+.section .content {
     width: 80%;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 60px;
-    margin-bottom: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* border: 1px solid white; */
+    display: flex;
+}
+
+.content.row {
+    flex-direction: row;
+}
+.content.col {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section.game #game-info #text {
+    align-items: flex-start;
+    text-align: left;
+}
+.section.game #game-info #screenshots {
+    align-items: flex-end;
+}
+.section.game #game-info #screenshots img {
+    width: 80%;
 }
 
 .button {
@@ -238,16 +256,29 @@ svg {
     box-shadow: inset 0 0 0 2px #fff;
     color: #fff;
     cursor: pointer;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 0.8em;
     font-weight: 600;
-    height: 3.125em;
-    letter-spacing: 0.225em;
-    line-height: 3.125em;
-    padding: 0 2.75em;
     text-align: center;
+    height: 3.125em;
+    min-width: 160px;
+    letter-spacing: 0.225em;
+    margin: auto;
+    margin-bottom: 12px;
+    padding: 0 25px;
     text-decoration: none;
     user-select: none;
+}
+
+.button.long {
+    width: 300px;
+}
+
+.button img {
+    height: 30%;
+    filter: invert(1);
 }
 
 .button:hover {
@@ -279,16 +310,6 @@ svg {
     font-size: 0.9em;
 }
 
-.row {
-    /* border: 1px solid green; */
-    display: flex;
-}
-
-.column {
-    /* border: 1px solid blue; */
-    flex: 50%
-}
-
 .column-item.title {
     /* border: 1px solid red; */
     padding: 0px;
@@ -316,4 +337,37 @@ svg {
 
 #preloader {
     display: none;
+}
+
+#games-collection #row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#games-collection #row img {
+    height: 350px;
+    transform: scale(1);
+    transition: .3s ease-in-out;
+}
+
+#games-collection #row img:hover {
+    transform: scale(1.05);
+}
+
+#spacer {
+    width: 12px;
+    /* border: 1px solid red; */
+}
+
+/* THEMES */
+[theme=cosmogony] {
+    --header-font: "Chakra Petch", sans-serif;
+    --body-font: "Chakra Petch", sans-serif;
+}
+[theme=cosmogony] #section-1 {
+    background-color: #161616;
+}
+[theme=cosmogony] .hero-image {
+    background-image: url(../../resources/img/games/cosmogony/banner.jpg);
 }

@@ -7,15 +7,15 @@ $(function () {
 
     $("#hero-scroll").on("click", function () {
         $.scrollTo("#section-1", 800);
-        console.log("scrollTo");
+        //console.log("scrollTo");
     });
 
     $("#menu").on("click", function () {
-        $("#mySidenav").css("width", "250px");
+        $("#sidenav").css("width", "250px");
     });
 
-    $("#closeBtn").on("click", function () {
-        $("#mySidenav").css("width", "0");
+    $("#close").on("click", function () {
+        $("#sidenav").css("width", "0");
     });
 
 
@@ -25,20 +25,10 @@ $(function () {
 
     //console.log(randomImg);
 
-    $(".hero-image").css({
+    $(".hero-image").not(".custom").css({
         "background-image": filter + ", " + randomImg
     });
 
-
-    /* curator-feed-default-feed-layout */
-    (function () {
-        var i, e, d = document,
-            s = "script";
-        i = d.createElement("script");
-        i.async = 1;
-        i.src = "https://cdn.curator.io/published/c0c78e5c-e7b7-4662-9022-8dff1ff268f4.js";
-        e = d.getElementsByTagName(s)[0];
-        e.parentNode.insertBefore(i, e);
-    })();
+    $(".hero-text h1").fitText(0.6);
 
 });

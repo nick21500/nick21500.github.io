@@ -5,29 +5,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Nicolas Orlandini Rocks!</title>
+
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="shortcut icon" href="resources/img/icons/logo.ico">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/3aa4c45faf.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
     <div class="header">
-        <h5>Nicolas Orlandini</h5>
-        <i class="fa fa-bars" id="menu" style="color: white"></i>
+        <i class="fa-solid fa-bars" id="menu"></i>
     </div>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" id="closeBtn">&times;</a>
+    <div id="sidenav" class="sidenav">
+        <i class="fa-solid fa-xmark" id="close"></i>
+
         <a href="index.html">Home</a>
         <a href="games.html">Games</a>
-        <!-- <a href="webdesign.html">Web Design</a> -->
+        <a href="games/cosmogony.html" class="sub">Cosmogony</a>
+        <!-- <a href="webdesign.html">Web Design</a>
         <a href="photography.html">Photography</a>
-        <a href="movies.html">Movies</a>
+        <a href="movies.html">Movies</a> -->
         <a href="/resources/top-secret/top-secret-zip.zip" id="secretBtn" download>👀</a>
     </div>
     
@@ -35,53 +41,80 @@
         <div class="hero-text">
             <h1>Nicolas Orlandini</h1>
         </div>
-        <i class="fa fa-arrow-down" id="hero-scroll"></i>
+
+        <i class="fa-solid fa-arrow-down" id="hero-scroll"></i>
+
         <svg viewBox="0 0 50 100" preserveAspectRatio="none">
             <polygon fill="#273034" points="0,100 100,0 100,100" />
         </svg>
     </div>
 
     <div class="section" id="section-1">
-        <div class="content">
+        <div class="content col">
             <h2>Games</h2>
-            <p>I'm a game developer! And sometimes a designer. Here's some of my work (and some of others')</p>
+            <p>I'm a game developer! And sometimes a designer. Here's some of my work:</p>
             <a href="games.html" class="button">Here!</a>
         </div>
     </div>
     
-    <div class="section short" id="section-2">
-        <div class="content">
+    <!-- <div class="section short" id="section-2">
+        <div class="content col">
             <h2>Web Design</h2>
             <p>Making websites is a thing I used to do. Most of them are archived here!</p>
             <a href="404.html" class="button">closed for construction</a>
         </div>
     </div>
 
-    <div class="section" id="section-3">
-        <div class="content">
+    <div class="section" id="section-2">
+        <div class="content col">
             <h2>Photography</h2>
             <p>I like taking photos but I haven't been doing it enough to warrant an entire section. Oh well!</p>
             <a href="photography.html" class="button">Here!</a>
         </div>
     </div>
 
-    <div class="section" id="section-4">
-        <div class="content">
+    <div class="section" id="section-3">
+        <div class="content col">
             <h2>Movies</h2>
             <p>I occasionally film videos that I think are cool or funny or whatever. Hey look, they're over there!</p>
             <a href="movies.html" class="button">Here!</a>
         </div>
+    </div> -->
+
+    <div class="section" id="section-2">
+        <div class="content col">
+            <h2>Other Stuff</h2>
+
+            <a href="https://www.instagram.com/cob_64/" class="button">
+                <i class="fa-brands fa-instagram"></i>
+                <div id="spacer"></div>
+                <span>instagram</span>
+            </a>
+
+            <a href="https://www.youtube.com/@nicolaso215" class="button">
+                <i class="fa-brands fa-youtube"></i>
+                <div id="spacer"></div>
+                <span>youtube</span>
+            </a>
+
+            <a href="https://soundcloud.com/djarchibald215" class="button">
+                <i class="fa-brands fa-soundcloud"></i>
+                <div id="spacer"></div>
+                <span>soundcloud</span>
+            </a>
+        </div>
     </div>
 
-    
 
     <div class="footer">
         <div class="footer-text">
-            <h5>&copy;
+            <h5 id="foot">
+                <i class="fa-regular fa-copyright" style="font-size: smaller"></i>
                 <script type="text/javascript">
                     document.write(new Date().getFullYear());
                 </script>
-                Nicolas Orlandini</h5>
+                Nicolas Orlandini
+            </h5>
         </div>
     </div>
     
@@ -98,5 +131,6 @@
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="assets/js/jquery.scrollTo-min.js"></script>
+    <script src="assets/js/jquery.fittext.js"></script>
     <script src="assets/js/main.js"></script>
 </body></html>

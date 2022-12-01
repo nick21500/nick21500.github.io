@@ -5,25 +5,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Nicolas O | Games</title>
+
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="shortcut icon" href="resources/img/icons/logo.ico">
+
+    <script src="https://kit.fontawesome.com/3aa4c45faf.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
     <div class="header">
-        <h5>Nicolas Orlandini</h5>
-        <i class="fa fa-bars" id="menu" style="color: white"></i>
+        <i class="fa-solid fa-bars" id="menu"></i>
     </div>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" id="closeBtn">&times;</a>
+    <div id="sidenav" class="sidenav">
+        <i class="fa-solid fa-xmark" id="close"></i>
+
         <a href="index.html">Home</a>
         <a href="games.html">Games</a>
-        <a href="webdesign.html">Web Design</a>
+        <a href="games/cosmogony.html" class="sub">Cosmogony</a>
+        <!-- <a href="webdesign.html">Web Design</a>
         <a href="photography.html">Photography</a>
-        <a href="movies.html">Movies</a>
+        <a href="movies.html">Movies</a> -->
         <a href="/resources/top-secret/top-secret-zip.zip" id="secretBtn" download>👀</a>
     </div>
 
@@ -34,33 +38,69 @@
     </div>
 
     <div class="section" id="section-1">
-        <div class="content">
+        <div class="content col">
             <h2>BoofQ Gaming</h2>
-            <p>Find me on itch <a href="https://cob64.itch.io/">here</a>. Here are my published games:</p>
-            <iframe frameborder="0" src="https://itch.io/embed/1269206?bg_color=161616&amp;fg_color=e3e3e3&amp;link_color=deddb5&amp;border_color=333333" width="552" height="167"><a href="https://cob64.itch.io/cosmogony">Cosmogony by BoofQ Gaming</a></iframe>
-            <p>Also there are some simpler games on some of my <a href="webdesign.html" target="">web design projects</a>.</p>
+
+            <a href="https://cob64.itch.io/" class="button">
+                <i class="fa-brands fa-itch-io"></i>
+                <div id="spacer"></div>
+                <span>itch.io</span>
+            </a>
+            
+            <a href="https://simmer.io/@BoofQ" class="button">
+                <img src="resources/img/icons/simmer.svg" id="simmer">
+                <div id="spacer"></div>
+                <span>simmer.io</span>
+            </a>
+
+            <div style="height: 10px;"></div>
+
+            <p>These are my published games:</p>
+            <div id="games-collection">
+                <div id="row">
+                    <a href="games/cosmogony.html"><img src="/resources/img/games/cosmogony/poster.jpg"></a>
+                </div>
+            </div>
+            
         </div>
     </div>
-    <div class="section" id="section-2">
+
+    <!-- <div class="section" id="section-2">
         <div class="content">
+            <p>Also there are some simpler games on some of my <a href="webdesign.html" target="">web design projects</a>.</p>
+        </div>
+    </div> -->
+
+    <div class="section" id="section-3">
+        <div class="content col">
             <h2>Not My Games</h2>
-            <p>A few of my favorite Flash games I like to play from time to time.</p>
-            <p>You can play Jezzball if you want by opening the .swf on the <a href="https://ruffle.rs/demo/">Ruffle Web Demo</a>
-            but Parameters is made with a newer version of Flash's programming language and as of 2021 won't work on most emulators :(
+            <p>A few of my favorite Flash games I like to play from time to time. Click a game to download the .swf:</p>
+
+            <div class="content col">
+                <a href="games/swf/jezzball.swf" download>Jezzball</a>
+                <span>
+                    <a href="games/swf/Parameters.swf" download>Parameters</a> &amp;
+                    <a href="games/swf/Parameters2.swf" download>Parameters 2</a>
+                </span>
+            </div>
+            
+
+            <p>Flash is resting in peace but you can play these a couple ways;
+               The <a href="https://ruffle.rs/demo/">Ruffle Web Demo</a> runs Jezzball fine, but Parameters will have visual glitches.
+               The <a href="http://web.archive.org/web/20220331041116/https://www.adobe.com/support/flashplayer/debug_downloads.html">official desktop Flash Player</a> runs them all perfectly :)
             </p>
-            <a href="games/jezzball.html" target="">Jezzball</a> <br>
-            <a href="games/parameters.html" target="">Parameters</a> &amp;
-            <a href="games/parameters2.html" target="">Parameters 2</a>
         </div>
     </div>
 
     <div class="footer">
         <div class="footer-text">
-            <h5>&copy;
+            <h5 id="foot">
+                <i class="fa-regular fa-copyright" style="font-size: smaller"></i>
                 <script type="text/javascript">
                     document.write(new Date().getFullYear());
                 </script>
-                Nicolas Orlandini</h5>
+                Nicolas Orlandini
+            </h5>
         </div>
     </div>
 
