@@ -282,7 +282,7 @@ ol li {
 }
 
 .arrow li {
-  background: url("/_resources/old_images/elements/list-arrows.png") no-repeat 0 7px;
+  background: url("/_assets/old_images/elements/list-arrows.png") no-repeat 0 7px;
   padding: 5px 0px 5px 13px;
   line-height:1.3; 
 }
@@ -314,7 +314,7 @@ ol ol{
 }
 
 ul li {
-  background: url("/_resources/old_images/elements/list-arrows.png") no-repeat 0 7px;
+  background: url("/_assets/old_images/elements/list-arrows.png") no-repeat 0 7px;
   list-style-type: none;
   padding: 5px 0px 0px 13px;
   line-height:1.3;  
@@ -325,7 +325,7 @@ ul li {
 }
 
 .arrow li {
-  background: url("/_resources/old_images/elements/list-arrows.png") no-repeat 0 7px;
+  background: url("/_assets/old_images/elements/list-arrows.png") no-repeat 0 7px;
   list-style-type: none;
   padding: 5px 0px 0px 13px;
   line-height:1.3; 

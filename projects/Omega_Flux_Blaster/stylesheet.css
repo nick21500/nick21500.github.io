@@ -12,17 +12,17 @@ article {
 
 @font-face {
     font-family: "Airstream";
-    src: url(resources/fonts/Airstream.otf);
+    src: url(assets/fonts/Airstream.otf);
 }
 
 @font-face {
     font-family: "Space Patrol";
-    src: url(resources/fonts/Space.otf);
+    src: url(assets/fonts/Space.otf);
 }
 
 @font-face {
     font-family: "Retrocycles";
-    src: url(resources/fonts/Retrocycles.otf);
+    src: url(assets/fonts/Retrocycles.otf);
 }
 
 #wrapper {
@@ -31,7 +31,7 @@ article {
     max-width: 1048px;
     margin-left: auto;
     margin-right: auto;
-    background-image: url("resources/images/bg/grunge-texture-3.jpg");
+    background-image: url("assets/images/bg/grunge-texture-3.jpg");
     background-repeat: repeat;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.78);
     padding: 30px;
@@ -39,7 +39,7 @@ article {
 }
 
 body {
-    background-image: url("resources/images/bg/grunge-texture-4.jpg");
+    background-image: url("assets/images/bg/grunge-texture-4.jpg");
     background-repeat: repeat;
     text-align: center;
     font-family: "Retrocycles", serif;
@@ -111,7 +111,7 @@ footer {
     width: 300px;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(resources/images/raygun.jpg);
+    background-image: url(assets/images/raygun.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     padding-bottom: 10px;

@@ -1,7 +1,7 @@
 /* Import a custom font because fuck defaults in general */
 @font-face {
     font-family: "Ikaros";
-    src: url(resources/font/IkarosRegular.otf);
+    src: url(assets/font/IkarosRegular.otf);
 }
 
 * {

@@ -22,7 +22,7 @@ $(function () {
             do {
                 var x = Math.floor(Math.random() * 10);
             } while (countInArray(faces, x) > 1)
-            $("#" + i).attr("src", "resources/face/" + theme + "/" + x + ".png");
+            $("#" + i).attr("src", "assets/face/" + theme + "/" + x + ".png");
             faces.push(x);
         }
     })

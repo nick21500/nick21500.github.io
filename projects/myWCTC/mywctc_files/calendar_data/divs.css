@@ -9,7 +9,7 @@
   margin: 0px auto 0px auto;
   height: 243px;
   background-color: #003f7b;
-  background-image: url("/_resources/old_images/elements/top-blue-bar.png");  
+  background-image: url("/_assets/old_images/elements/top-blue-bar.png");  
 }
 
 #main_junk{
@@ -36,9 +36,9 @@
   padding: 0px;
   width: 660px;
   height: 114px;
-  /*background-image: url("/_resources/old_images/elements/header.png");*/
+  /*background-image: url("/_assets/old_images/elements/header.png");*/
   background-color: #003f7b;
-  background-image: url(/_resources/old_images/elements/top-blue-bar.png);
+  background-image: url(/_assets/old_images/elements/top-blue-bar.png);
   float: right;
 }
 
@@ -57,7 +57,7 @@
   width: 960px;
   height: 50px;
   background-color: #003f7b;
-  background-image: url("/_resources/old_images/elements/main-nav-bg.png");
+  background-image: url("/_assets/old_images/elements/main-nav-bg.png");
 }
 
 #mobile_slider_news{
@@ -79,7 +79,7 @@
 }
 
 .section_separator{
-  background-image: url("/_resources/old_images/elements/large-section-separator.jpg");
+  background-image: url("/_assets/old_images/elements/large-section-separator.jpg");
   height: 10px; 
 }
 
@@ -359,7 +359,7 @@
 .main_cal_box_shadow{
   width: 35px;
   height: 39px;
-  background-image: url("/_resources/old_images/elements/calendar-background.png");
+  background-image: url("/_assets/old_images/elements/calendar-background.png");
 }
  
 .main_cal_box_month {
@@ -619,7 +619,7 @@
 }    
 
 .section_separator_current{
-  background-image: url("/_resources/old_images/elements/large-section-separator.jpg");
+  background-image: url("/_assets/old_images/elements/large-section-separator.jpg");
   height: 10px; 
   width: 693px;
 }

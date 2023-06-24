@@ -22,6 +22,18 @@ a {
     color: #ffffff;
 }
 
+textarea {
+    background-color: #212224;
+    color: white;
+}
+textarea::placeholder {
+    color: rgb(151, 151, 151);
+}
+
+ul.simple {
+    list-style: none;
+}
+
 .header {
     position: fixed;
     z-index: 1;
@@ -125,7 +137,7 @@ a {
 }
 
 .hero-image.h404 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../resources/img/404.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/img/404.jpg");
     height: 100%;
     background-position: top;
     background-size: cover;
@@ -181,7 +193,7 @@ a {
     cursor: pointer;
 }
 
-svg {
+.hero-image svg {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -207,6 +219,14 @@ svg {
     /* border: 1px solid red; */
 }
 
+.footer img {
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .section {
     height: auto;
     width: 100%;
@@ -218,9 +238,14 @@ svg {
     color: white;
 }
 
+.section:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
 .section .content {
-    width: 80%;
-    max-width: 1000px;
+    width: 90%;
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
@@ -238,6 +263,10 @@ svg {
     align-items: center;
 }
 
+.content .text {
+    padding-bottom: 20px;
+}
+
 .section.game #game-info #text {
     align-items: flex-start;
     text-align: left;
@@ -250,39 +279,54 @@ svg {
 }
 
 .button {
-    transition: background-color 0.2s ease-in-out;
-    background-color: transparent;
-    border-radius: 3px;
-    box-shadow: inset 0 0 0 2px #fff;
-    color: #fff;
     cursor: pointer;
+    text-decoration: none;
+    user-select: none;
+
+    transition: background-color 0.2s ease-in-out;
+
+    background-color: transparent;
+
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 2px #fff;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
+    color: #fff;
     font-size: 0.8em;
     font-weight: 600;
     text-align: center;
-    height: 3.125em;
-    min-width: 160px;
+
+    height: 3em;
+    /* min-width: 160px; */
+    /* width: 80%; */
+
     letter-spacing: 0.225em;
-    margin: auto;
-    margin-bottom: 12px;
+
+    /* margin: auto; */
+    /* margin-bottom: 12px; */
     padding: 0 25px;
-    text-decoration: none;
-    user-select: none;
 }
-
-.button.long {
+/* .button.long {
     width: 300px;
+} */
+.button.medium {
+    font-size: 0.65em;
 }
-
+.button.small {
+    font-size: 0.5em;
+}
 .button img {
     height: 30%;
     filter: invert(1);
 }
-
 .button:hover {
     background-color: rgba(255, 255, 255, 0.1);
+}
+.button.series:not(:last-child) {
+    margin-bottom: 0.5em;
 }
 
 #section-1 {
@@ -360,6 +404,46 @@ svg {
     /* border: 1px solid red; */
 }
 
+.tab {
+    /* border: 1px solid red; */
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    width: 100%;
+}
+.tab .card {
+    /* border: 1px solid blue; */
+
+    background-color: #191a1b;
+    padding: 25px;
+    padding-bottom: 40px;
+    border-radius: 15px;
+    margin: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+
+    width: 230px;
+}
+.tab .card #preview {
+    /* border: 1px solid green; */
+
+    color: #abc9e3;
+    padding: 15px;
+}
+.tab .card #name {
+    /* border: 1px solid green; */
+    padding: 15px;
+}
+.tab .card #code .button {
+    /* border: 1px solid green; */
+    margin-bottom: 10px;
+}
+
 /* THEMES */
 [theme=cosmogony] {
     --header-font: "Chakra Petch", sans-serif;
@@ -369,5 +453,15 @@ svg {
     background-color: #161616;
 }
 [theme=cosmogony] .hero-image {
-    background-image: url(../../resources/img/games/cosmogony/banner.jpg);
+    background-image: url(../../assets/img/games/cosmogony/banner.jpg);
+}
+
+[theme=svg-tool] #section-1 {
+    background-color: #212224;
+}
+[theme=svg-tool] #section-2 {
+    background-color: #181515;
+}
+[theme=svg-tool] .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/img/hero/custom/squares.jpg);
 }
