@@ -28,7 +28,7 @@ $(function () {
     // This runs after the CSS!
     var imageCount = 8;
     var filter = "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))";
-    var randomImg = "url('../../assets/img/hero/random" + (Math.floor(Math.random() * imageCount) + 1) + ".jpg')";
+    var randomImg = "url('../../assets/img/hero/random/" + (Math.floor(Math.random() * imageCount) + 1) + ".jpg')";
 
     $(".hero-image").not(".custom").css({
         "background-image": filter + ", " + randomImg
