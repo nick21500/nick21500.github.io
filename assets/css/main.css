@@ -1,8 +1,8 @@
 :root {
-    --hero-font: "Fira Mono";
-    --header-font: "Fira Mono";
+    --hero-font: "Syne Mono";
+    --header-font: "Syne Mono";
     --body-font: "Fira Mono";
-    --footer-font: "Fira Mono";
+    --footer-font: "Syne Mono";
 }
 
 body,
@@ -148,7 +148,6 @@ ul.simple {
     /* height: 500px; */
     text-align: center;
     color: white;
-    font-family: var(--hero-font), sans-serif;
     /* border: 1px solid white; */
 }
 
@@ -158,6 +157,7 @@ ul.simple {
 }
 
 .hero-text h1 {
+    font-family: var(--hero-font), sans-serif;
     text-align: center;
     margin: auto;
     max-width: 75%;
