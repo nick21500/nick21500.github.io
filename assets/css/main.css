@@ -216,6 +216,8 @@ ul.simple {
     transform: translate(-50%, -50%);
     color: white;
     font-family: var(--footer-font), sans-serif;
+    font-weight: bold;
+    font-size: smaller;
     /* border: 1px solid red; */
 }
 
