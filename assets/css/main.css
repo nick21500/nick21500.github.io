@@ -219,12 +219,9 @@ ul.simple {
     /* border: 1px solid red; */
 }
 
-.footer img {
-    height: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.emoji {
+    height: 28px;
+    vertical-align: middle;
 }
 
 .section {

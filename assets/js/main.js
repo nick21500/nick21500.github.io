@@ -11,7 +11,7 @@ $(function () {
             $.scrollTo("#section-1", 800);
         });
     
-        $(".hero-text h1").fitText(0.6);
+        $(".hero-text h1").fitText(0.4);
     }
 
 
